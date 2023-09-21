@@ -1,1 +1,2 @@
 alias kctl=kubectl
+alias awsv=aws-vault
