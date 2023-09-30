@@ -1,1 +1,6 @@
 *.md
+**/.gitignore
+**/*.encrypted
+.sops.yaml
+justfile
+LICENSE

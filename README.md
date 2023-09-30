@@ -2,11 +2,19 @@
 
 ## install
 
+### chezmoi
 `sh -c "$(wget -qO- get.chezmoi.io)" -- -b $HOME/.local/bin`
+
+### just
+`curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to $HOME/.local/bin`
+
 
 ## bootstrap
 
-`chezmoi init --apply $GITHUB_USERNAME`
+1. get repo: `chezmoi init $GITHUB_USERNAME`
+2. cd into repo dir: `chezmoi cd`
+3. decrypt files: `just decrypt`
+4. apply dotfiles: `chezmoi apply`
 
 ## setup zsh
 
