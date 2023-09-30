@@ -118,6 +118,11 @@ fi
 
 # customs
 
+## aliases
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
 ## custom bins
 export PATH=$PATH:~/.local/bin
 
