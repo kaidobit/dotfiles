@@ -1,3 +1,5 @@
 creation_rules:
   - path_regex: dot_kube/private_config
     hc_vault_transit_uri: "http://192.168.10.3:8200/v1/sops/keys/dotfiles"
+  - path_regex: private_dot_ssh/*
+    hc_vault_transit_uri: "http://192.168.10.3:8200/v1/sops/keys/dotfiles"
