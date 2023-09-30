@@ -11,10 +11,11 @@
 
 ## bootstrap
 
-1. get repo: `chezmoi init $GITHUB_USERNAME`
-2. cd into repo dir: `chezmoi cd`
-3. decrypt files: `just decrypt`
-4. apply dotfiles: `chezmoi apply`
+1. export `VAULT_ADDR`and `VAULT_TOKEN`
+2. get repo: `chezmoi init $GITHUB_USERNAME`
+3. cd into repo dir: `chezmoi cd`
+4. decrypt files: `just decrypt`
+5. apply dotfiles: `chezmoi apply`
 
 ## setup zsh
 
