@@ -27,3 +27,7 @@
       * `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions`
    3. `zsh-syntax-highlighting` 
       * `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+
+## impediments
+
+Since HCP vault is not supported for storing encryption secret I had to opt for sops instead of chezmoi's encryption.
