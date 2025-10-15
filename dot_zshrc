@@ -103,13 +103,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# environment variables
+export PATH=$PATH:$HOME/go/bin # go binaries
 
 # completions
 source <(kubectl completion zsh)
 source <(stern --completion=zsh)
-
-# environment variables
-export PATH=$PATH:$HOME/go/bin # go binaries
 
 # chezmoi reminder
 [[ $- == *i* ]] && ~/.local/bin/chezmoi_reminder.sh
