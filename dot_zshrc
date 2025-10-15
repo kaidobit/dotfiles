@@ -110,3 +110,7 @@ source <(stern --completion=zsh)
 
 # environment variables
 export PATH=$PATH:$HOME/go/bin # go binaries
+
+# chezmoi reminder
+[[ $- == *i* ]] && ~/.local/bin/chezmoi_reminder.sh
+
