@@ -1,0 +1,107 @@
+# ==========================
+# USER INFORMATION
+# ==========================
+[user]
+   email = none@of-your-business.com
+   name = kaidobit
+
+# ==========================
+# CORE SETTINGS
+# ==========================
+[core]
+    # Default editor for git commit messages
+    editor = nano
+    # Pager for commands like `git log` (delta makes it pretty)
+    pager = colordiff
+    # Normalize line endings (input = convert CRLF -> LF on commit)
+    autocrlf = input
+    # Warn if CRLF line endings are unsafe
+    safecrlf = true
+    # Global ignore file
+    excludesfile = ~/.gitignore_global
+
+# ==========================
+# COLOR SETTINGS
+# ==========================
+[color]
+    # Enable colored output
+    ui = auto
+
+# ==========================
+# DIFF SETTINGS
+# ==========================
+[diff]
+    # Detect file renames
+    renames = true
+    # Make diffs more readable (compaction heuristic)
+    compactionHeuristic = true
+
+# ==========================
+# MERGE SETTINGS
+# ==========================
+[merge]
+    # Default merge tool
+    tool = meld
+    # Show base version when conflicts occur
+    conflictStyle = diff3
+
+# ==========================
+# PULL AND PUSH
+# ==========================
+[pull]
+    # Merge instead of rebase by default
+    rebase = true
+    # Only allow fast-forward merges
+    ff = only
+
+[push]
+    # Push current branch by default
+    default = current
+
+# ==========================
+# FETCH SETTINGS
+# ==========================
+[fetch]
+    # Remove deleted remote branches automatically
+    prune = true
+
+# ==========================
+# STATUS SETTINGS
+# ==========================
+[status]
+    # Show submodule changes in status
+    submoduleSummary = true
+
+# ==========================
+# RERERE (REUSE RECORDED RESOLUTIONS)
+# ==========================
+[rerere]
+    # Enable "reuse recorded resolution" — remembers how you resolved conflicts
+    enabled = true
+    # Automatically apply previously recorded resolutions when possible
+    autoupdate = true
+
+# ==========================
+# COMMIT AND TAG SIGNING
+# ==========================
+[commit]
+    # Sign commits automatically
+    gpgsign = true
+
+[tag]
+    # Sign tags automatically
+    gpgsign = true
+
+# ==========================
+# ADVICE
+# ==========================
+[advice]
+    # Disable detached HEAD warning
+    detachedHead = false
+
+# ==========================
+# INITIALIZATION
+# ==========================
+[init]
+    # Default branch name for new repositories
+    defaultBranch = main
