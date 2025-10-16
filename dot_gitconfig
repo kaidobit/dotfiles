@@ -1,9 +1,5 @@
-# ==========================
-# USER INFORMATION
-# ==========================
-[user]
-   email = none@of-your-business.com
-   name = kaidobit
+[include]
+    path = ~/.gitconfig-user
 
 # ==========================
 # CORE SETTINGS
