@@ -1,3 +1,6 @@
+# ==========================
+# USER SETTINGS (imported)
+# ==========================
 [include]
     path = ~/.gitconfig-user
 
