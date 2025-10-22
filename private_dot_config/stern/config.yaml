@@ -1,0 +1,2 @@
+template: '({{color .PodColor .Namespace}}{{color .PodColor "/"}}{{color .PodColor .PodName}}{{if .ContainerName}}|{{color .ContainerColor .ContainerName}}){{end}}{{with $msg := tryParseJSON .Message}} {{toTimestamp $msg.ts "2006-01-02 15:04:05"}} [{{levelColor $msg.level}}]:{{"\t"}}{{$msg.msg}}{{else}}:{{"\t"}}{{.Message}}{{end}}{{"\n"}}'
+timestamps: short
